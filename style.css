@@ -1,0 +1,324 @@
+/* This is comments */
+
+/*CSS RESET */
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  /* CSS RESET */
+
+  /* General Section */
+  body {
+   background-image: linear-gradient(90deg, #707070 0%, #ededed 40%, #707070 100%);
+   
+  }
+  
+  #page-wrapper {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0px auto;
+    height: fit-content;
+    font-family:'Playfair Display'; 
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 0 0;
+    
+  }
+
+  .logo-of-my-company {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: normal;
+    color: #0e0e0e;
+  }
+
+  .menu ul li {
+    display: inline;
+    padding: 0 24px;
+    padding-right: 40px;
+    
+  }
+
+  button.btn {
+    background-image: linear-gradient(90deg, #9d9d9d 0%, #bcbcbc 35%, #cfcfcf 100%);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+  
+  
+  /* Banner section */
+
+  #banner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .banner {
+    background-image: url(img/banner/image.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1040px;
+    height: 360px;
+    background-size: contain;
+    margin: 40px auto 80px auto;
+    border-radius: 20px;
+  }
+
+  .intro{
+    margin: 30px 0;
+    
+  }
+  .intro h1{
+    
+    margin-bottom: 30px;
+    font-family:'Playfair Display'; 
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  .intro p {
+    margin-left: 15px;
+    text-align: center;
+  }
+
+  
+  button.get {
+    background-image: linear-gradient(90deg, #c3c3c3 0%, #dddddd 35%, #eeeeee 100%);
+    border: 2px solid rgb(53, 49, 49);
+    color: rgb(19, 17, 17);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 207px;
+    margin-top: 30px;
+    margin-left: 320px;
+    
+  }
+
+  /* My Work Section */
+
+  #my-works h2 {
+    margin-top: 80px;
+    font-size: 24px;
+    text-align: center;
+    margin-right: 20px;
+    
+  }
+  
+  .intro2 {
+    display: flex;
+    
+    gap: 20px;
+    
+  }
+  .card {
+    background-image: linear-gradient(90deg, #707070 0%, #ededed 35%, #707070 100%);
+    border-radius: 15px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    margin: 90px 90px;
+    margin-bottom: 60px;
+    margin-top: 80px;
+    
+  }
+   .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+   }
+  
+   
+  
+
+  /* Work Process Section */
+  #work-process {
+    background-image: linear-gradient(90deg, #707070 0%, #ededed 35%, #707070 100%);
+    padding: 60px 120px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    margin-right: 20px;
+  }
+
+
+  #work-process h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .process-step {
+    margin: 20px auto;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 1040px;
+  }
+
+  .process-step h3 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .process-step p {
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    text-align: left;
+    border-top: 2px solid black;
+    padding-top: 24px;
+  }
+  .briefing-step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .briefing-step span {
+    font-size: 16px;
+    border: 2px solid black;
+    padding: 6px 14px;
+    font-weight: bold;
+    border-radius: 49px;
+  }
+  
+
+  /* Get In Touch Section */
+  #contact {
+    background-image: linear-gradient(90deg, #616161 0%, #bdbdbd 35%, #616161 100%);
+    color: rgb(0, 0, 0);
+    padding: 60px 0;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    margin: -20px 0 0px 0;
+  }
+
+  #contact h2 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: normal;
+    
+  }
+
+  #contact p {
+    margin-bottom: 30px;
+  }
+
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #contact .input-group {
+    display: flex;
+    gap: 15px;
+    color: rgb(98, 19, 19);
+  }
+
+  #contact .input-group input {
+    flex: 1;
+  }
+
+  #contact input, #contact textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(85, 85, 85);
+    
+    
+  }
+
+  #contact textarea {
+    resize: vertical;
+  }
+
+  #contact button {
+    background-image: linear-gradient(90deg, #9d9d9d 0%, #bcbcbc 35%, #cfcfcf 100%);
+    border: 2px solid rgb(53, 49, 49);
+    color: rgb(52, 52, 52);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 207px;
+    align-self: center;
+  }
+
+/* Fotter */
+footer {
+    background-image: linear-gradient(90deg, #707070 0%, #ededed 35%, #707070 100%);
+    color: rgb(49, 49, 49);
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 40px 120px;
+    border-top: 1px dashed rgb(84, 77, 77);
+  }
+
+footer .social-links a {
+    color: #0a0909;
+    margin: 0 10px;
+    text-decoration-color: #1a1a1a;
+    padding: 0 0 1px 0;
+    border-bottom: 1px solid #1c1a1a;
+  }
